@@ -3,16 +3,18 @@
 
 int main()
 {
-    char letters[100];
     int num, i = 0;
+
 
 
     printf("enter the number of letters you need to enter :\n");
     scanf("%d", &num);
 
+    char letters[num];
+
     for (i = 0 ; i < num; i++)
     {
-        printf("enter the first letter: ");
+        printf("La letter %d: ", i +1);
         scanf("%s", &letters[i]);
     }
 
